@@ -1,4 +1,4 @@
-package com.im.config;
+package com.im.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,6 +20,7 @@ public class SecurityConfig {
 			.oauth2Login(withDefaults());
 		http.oauth2ResourceServer().jwt();
 		http.csrf().disable();
+		http.headers().frameOptions().disable();
 		return http.build();
 	}
 

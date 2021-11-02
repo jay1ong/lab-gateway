@@ -1,4 +1,4 @@
-package com.im.config;
+package com.im.gateway.config;
 
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.discovery.ReactiveDiscoveryClient;
